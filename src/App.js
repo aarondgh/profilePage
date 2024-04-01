@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { useEffect, useState, useRef } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
+import Notfoundpage from "./pages/404/NotFoundPage";
+import Loginpage from "./pages/auth/LoginPage";
+import {LogIn} from "./components/pure/forms/loginForm";
 import './App.css';
+import SignUp from "./components/pure/forms/sigUpForm";
+import RegisterPage from "./pages/auth/RegisterPage";
+// import Dashboard from "./pages/dashboard/DashBoard";
+// import Profilepage from "./pages/profile/ProfilePage";
+// import Homepage from "./pages/home/HomePage";
+// import Taskpage from "./pages/tasks/TaskPage";
+// import Statepage from "./pages/home/StatePage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/* <LogIn></LogIn> */}
+    {/* <Loginpage></Loginpage> */}
+    <RegisterPage></RegisterPage>
     </div>
   );
 }
-
 export default App;
